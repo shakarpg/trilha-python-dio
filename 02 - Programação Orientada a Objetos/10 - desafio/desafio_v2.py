@@ -178,9 +178,9 @@ class Deposito(Transacao):
 def menu():
     menu = """\n
     ================ MENU ================
-    [d]\tDepositar
-    [s]\tSacar
-    [e]\tExtrato
+    [1]\tDepositar
+    [2]\tSacar
+    [3]\tExtrato
     [nc]\tNova conta
     [lc]\tListar contas
     [nu]\tNovo usuário
@@ -313,13 +313,13 @@ def main():
     while True:
         opcao = menu()
 
-        if opcao == "d":
+        if opcao == "1":
             depositar(clientes)
 
-        elif opcao == "s":
+        elif opcao == "2":
             sacar(clientes)
 
-        elif opcao == "e":
+        elif opcao == "3":
             exibir_extrato(clientes)
 
         elif opcao == "nu":
